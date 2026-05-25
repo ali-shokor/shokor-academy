@@ -2,6 +2,21 @@
   // set year
   document.getElementById('year').textContent = new Date().getFullYear();
 
+  // --- Mobile nav toggle ---
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+    nav.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => nav.classList.remove('open'));
+    });
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) nav.classList.remove('open');
+    });
+  }
+
   // --- Floating labels: add has-value class on input/change ---
   const formGroups = document.querySelectorAll('.form-group');
   formGroups.forEach(group => {
