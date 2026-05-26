@@ -120,9 +120,9 @@
       scaleMobile: 1.0,
       color: 0x7c3aed,
       backgroundColor: 0x080810,
-      points: isMobile ? 6 : 11,
-      maxDistance: isMobile ? 18 : 24,
-      spacing: isMobile ? 22 : 16,
+      points: isMobile ? 8 : 14,
+      maxDistance: isMobile ? 25 : 30,
+      spacing: isMobile ? 20 : 18,
       showDots: false
     });
   }
