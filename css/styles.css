@@ -296,11 +296,11 @@ a, button, input, select, textarea, .btn, .course-card, .assistant-area { cursor
 
 .hero-title {
   font-family: var(--font-head);
-  font-size: clamp(3rem, 8vw, 5.5rem);
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
   font-weight: 800;
-  line-height: 1.05;
-  letter-spacing: -2px;
-  margin: 0 0 24px;
+  line-height: 1.15;
+  letter-spacing: -1px;
+  margin: 0 0 20px;
 }
 
 .hero-title span { color: var(--accent); }
